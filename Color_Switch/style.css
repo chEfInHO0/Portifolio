@@ -1,0 +1,36 @@
+/* Gen Config */
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*END Gen Config  */
+
+/*Header e Footer preset */
+.head-area,.foot-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+/* End Header e Footer preset */
+
+/* Default space setter*/
+.color-set{
+    margin-top: 150px;
+    margin-bottom: 30px;
+}
+/* End spacer*/
+
+/* Div area handler */
+.nuts-area{
+    margin-top: 150px;
+    height: 200px;
+}
+.nuts{
+    transition: 0.2s all linear;
+    width: 50px;
+    height: 25px;
+    background-color: rgb(110, 110, 110)
+}
+/* End Div area */

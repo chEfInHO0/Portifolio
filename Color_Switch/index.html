@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <title>Color Switch</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class="head-area">
+            <h1>Select your own Website Colors:</h1>
+        </header>
+        <!-- Body styler area -->
+        <div class="row justify-content-center text-center color-set">
+            <div class="col-4">
+                <h3>Body Color</h3>
+                <input type="range" name="body-r" class="form-range body-r" min="0" max="255" value="255"
+                    oninput="getBodyColors()">
+                <input type="range" name="body-g" class="form-range body-g" min="0" max="255" value="255"
+                    oninput="getBodyColors()">
+                <input type="range" name="body-b" class="form-range body-b" min="0" max="255" value="255"
+                    oninput="getBodyColors()">
+                <input type="button" value="Reset Body" class="btn btn-secondary" onclick="resetBody()">
+            </div>
+            <!-- End Body Styler -->
+            <!-- Text Styler -->
+            <div class="col-4">
+                <h3>Text Color</h3>
+                <input type="range" name="text-r" class="form-range text-r" min="0" max="255" value="0"
+                    oninput="getTextColors()">
+                <input type="range" name="text-g" class="form-range text-g" min="0" max="255" value="0"
+                    oninput="getTextColors()">
+                <input type="range" name="text-b" class="form-range text-b" min="0" max="255" value="0"
+                    oninput="getTextColors()">
+                <input type="button" value="Reset Text" class="btn btn-secondary" onclick="resetText()">
+            </div>
+            <!-- End Text Styler -->
+            <h2 class="text-center color-set">Preseted Colors</h2>
+            <div class="row text-center justify-content-center mt-5">
+                <!-- Present User with info passed on previous areas -->
+                <div class="col-4">
+                    <h3>
+                        Body Color:
+                    </h3>
+                    <p class="body-preset">
+
+                    </p>
+                </div>
+                <div class="col-4">
+                    <h3>
+                        Text Color:
+                    </h3>
+                    <p class="text-preset">
+
+                    </p>
+                </div>
+                <!-- End of information area -->
+            </div>
+            <div class="row text-center justify-content-center color-set">
+                <div class="col-6">
+                    <!-- Test Lab area for User -->
+                    <h3>Go nuts</h3>
+                    Width<input type="range" name="text-r" class="form-range div-w" min="50" max="300" value="50"
+                        oninput="changeDiv()">
+                    Height<input type="range" name="text-g" class="form-range div-h" min="25" max="300" value="25"
+                        oninput="changeDiv()">
+                    Border<input type="range" name="text-b" class="form-range div-bd" min="0" max="40" value="0"
+                        oninput="changeDiv()">
+                    Border Radius<input type="range" name="text-b" class="form-range div-br" min="0" max="50" value="0"
+                        oninput="changeDiv()">
+                    Red hex<input type="range" name="text-r" class="form-range div-red" min="0" max="255" value="110"
+                        oninput="changeDiv()">
+                    Green hex<input type="range" name="text-g" class="form-range div-green" min="0" max="255"
+                        value="110" oninput="changeDiv()">
+                    Blue hex<input type="range" name="text-b" class="form-range div-blue" min="0" max="255" value="110"
+                        oninput="changeDiv()">
+                    Border Red hex<input type="range" name="text-r" class="form-range div-bred" min="0" max="255"
+                        value="0" oninput="changeDiv()">
+                    Border Green hex<input type="range" name="text-g" class="form-range div-bgreen" min="0" max="255"
+                        value="0" oninput="changeDiv()">
+                    Border Blue hex<input type="range" name="text-b" class="form-range div-bblue" min="0" max="255"
+                        value="0" oninput="changeDiv()">
+                    <input type="button" value="Reset Div" class="btn btn-secondary" onclick="resetDiv()">
+                </div>
+                <!-- End of Lab -->
+                <div class="col-6">
+                    <div class="row justify-content-center align-items-center nuts-area text-center">
+                        <div class="col-4">
+                            <!-- Present user with values passed in lab -->
+                            <div class="nuts"></div>
+                            <pre class="preset-nuts text-center">
+
+                            </pre>
+                            <!-- End of UX -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <footer class="foot-area">
+            <div class="mb-4">
+                <h1>Designed by Luccas Elias</h1>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

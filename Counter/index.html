@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <title>Counter</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row text-center spacer align-items-center">
+            <div class="col-12 min-spacer">
+                <h2 class="title">Counter</h2>
+            </div>
+            <div class="col-12 min-spacer count">0</div>
+            <div class="row justify-content-around">
+                <div class="col-3 min-spacer justify-content-center btn btn-outline-danger" onclick="decreaseCount()">
+                    DECREASE</div>
+                <div class="col-3 min-spacer justify-content-center btn btn-outline-warning" onclick="resetCount()">
+                    RESET</div>
+                <div class="col-3 min-spacer justify-content-center btn btn-outline-success" onclick="increaseCount()">
+                    INCREASE</div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
