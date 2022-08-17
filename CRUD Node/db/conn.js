@@ -1,10 +1,12 @@
-const mysql = require('mysql')
 const secrets = require('./secret')
-const conn = mysql.createPool({
-    connectionLimit:`${secrets.dbMaxConns}`,
-    user:`${secrets.dbUser}`,
-    password:`${secrets.dbPassword}`,
-    database:`${secrets.dbName}`,
-    host:`${secrets.dbHost}`})
+const {Sequelize} = require('sequelize')
 
-module.exports = conn
+const config = {
+    database:secrets.dbName,
+    user:secrets.dbUser,
+    password:secrets.dbPassword,
+    host:secrets.dbHost,
+    dialect:secrets.dbDialect
+}
+const pool = new Sequelize(config.database,config.user,config.password,{host:config.host,dialect:config.dialect})
+module.exports = pool

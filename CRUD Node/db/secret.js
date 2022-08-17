@@ -1,5 +1,9 @@
-const dbName = 'crud' // Name your database to connect
-const dbUser = 'root'
-const dbPassword = ''
-const dbMaxConns = 10
-const dbHost = `localhost`
+const secret = {
+    dbName : 'sequelize', // Name your database to connect
+    dbUser : 'root',
+    dbPassword : '',
+    dbMaxConns : 10,
+    dbHost : `localhost`,
+    dbDialect:'mysql'
+}
+module.exports = secret
