@@ -1,0 +1,24 @@
+<div class="row justify-content-center text-center">
+    <h1>{{title}}</h1>
+    <div class="col-4">
+        <form action="update" method="post">
+            <div class="row row-cols-1">
+                <input type="hidden" name="id" value="{{prod.id}}">
+                <div class="col mb-3">
+                    <input type="text" name="name" class="form-input" placeholder="Product name" value="{{prod.name}}">
+                </div>
+                <div class="col mb-3">
+                    <input type="text" name="serial" class="form-input" placeholder="Product serial" value="{{prod.serial}}">
+                </div>
+                <div class="col mb-3">
+                    <input type="text" name="category" class="form-input" placeholder="Product category" value="{{prod.category}}">
+                </div>
+                <div class="col mb-3">
+                    <input type="submit" value="Update">
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+</div>

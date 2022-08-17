@@ -1,0 +1,32 @@
+<div class="row justify-content-center text-center">
+    <h1>{{title}}</h1>
+    <div class="col-9">
+        <table class="table">
+            <thead>
+                <th>
+                <td>#</td>
+                <td>Name</td>
+                <td>Serial Nº</td>
+                <td>Category</td>
+                <td>Action</td>
+                </th>
+            </thead>
+            <tbody>
+                    {{#each prod}}
+                    <tr>
+                        <th>
+                            <td>{{id}}</td>
+                            <td>{{name}}</td>
+                            <td>{{serial}}</td>
+                            <td>{{category}}</td>
+                            <form action="deleting" method="post">
+                                <input type="hidden" name="id" value="{{id}}">
+                                <td><button type="submit"><i class="bi bi-x-circle-fill"></i></button></td>
+                            </form>
+                        </th>
+                    </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</div>

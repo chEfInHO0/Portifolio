@@ -8,13 +8,15 @@ app.use(express.json())
 
 app.use(express.static('public'))
 
-app.use('/prod',prod)
-
 app.engine('handlebars',exphbs.engine())
 app.set('view engine','handlebars')
 
-app.get('/',(req,res) => {
+app.use('/prod',prod)
+
+app.get('/prod',(req,res) => {
     res.render('home')
 })
-
+app.get('/',(req,res) => {
+    res.redirect('/prod')
+})
 conn.sync().then(app.listen(3000)).catch(err => {console.log(err)})
