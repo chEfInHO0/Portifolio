@@ -20,6 +20,9 @@ function createTaskArea() {
             if (c1_1.style.textDecoration == 'none') {
                 c1_1.style.textDecoration = 'line-through';
             }
+            else if (!c1_1.style.textDecoration) {
+                c1_1.style.textDecoration = 'line-through';
+            }
             else {
                 c1_1.style.textDecoration = 'none';
             }

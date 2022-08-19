@@ -18,6 +18,8 @@ function createTaskArea(): void {
         c2.onclick = () => { 
             if(c1.style.textDecoration == 'none'){
                 c1.style.textDecoration = 'line-through' 
+            }else if(!c1.style.textDecoration){
+                c1.style.textDecoration = 'line-through'
             }else{
                 c1.style.textDecoration = 'none'
             }
