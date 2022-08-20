@@ -7,7 +7,9 @@ body{
 .op-area{
     margin-top: 12%;
     max-width: 60%;
-    height: 600px;
+    min-width: 320px;   
+    min-height: 500px;
+    max-height: 1000px;
     border-radius: 20px;
     box-shadow: 5px 5px 50px #ccc;
 }
@@ -32,7 +34,7 @@ body{
     bottom  : 0;
     height  : 1px;
     width   : 40%;  /* or 100px */
-    border-bottom:5px solid blue;
+    border-bottom:5px solid #0d6efd;
   }
 .thumbnail{
     margin-top: 50px;
@@ -42,13 +44,13 @@ body{
     max-height: 181px;
     border-radius: 50%;
     position: relative;
-    box-shadow: 20px -10px #ccc;
+    box-shadow: 20px -10px #0d6efd;
 }
 .occupation{
     letter-spacing: 1px;
     font-size:1em;
     font-weight: 400;
-    color: blue;
+    color: #0d6efd;
 }
 .name{
     letter-spacing: 2px;
